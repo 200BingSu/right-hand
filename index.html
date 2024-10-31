@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css"
+    />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -22,12 +26,12 @@
           <a href="/" class="header-logo-link">로고 이미지</a>
         </div>
         <!-- 메뉴 -->
-        <div class="menu-list">
-          <a href="#" class="menu">요양서비스</a>
-          <a href="#" class="menu">센터찾기</a>
-          <a href="#" class="menu">콘텐츠</a>
-          <a href="#" class="menu">고객센터</a>
-        </div>
+        <ul class="menu-list">
+          <li><a href="#" class="menu">요양서비스</a></li>
+          <li><a href="#" class="menu">센터찾기</a></li>
+          <li><a href="#" class="menu">콘텐츠</a></li>
+          <li><a href="#" class="menu">고객센터</a></li>
+        </ul>
         <!-- 개인 메뉴 -->
         <div class="profile-box">
           <div class="partners"><a href="#">파트너스</a></div>
@@ -37,36 +41,31 @@
     </header>
     <main class="main">
       <!-- 슬라이드 -->
-      <div class="main-slide">
-        <!--슬라이드 이미지-->
-        <div class="main-slide-thum">
-          <a href="#">
-            <img src="./images/seniors.png" />
-          </a>
-        </div>
-      </div>
-      <!-- 슬라이드 버튼 --><!--이거 다 <a>로 바꾸자-->
-      <div class="main-slide-button-wrap">
-        <div class="main-slide-button">◀</div>
-        <div class="main-slide-button-circle"></div>
-        <div class="main-slide-button-circle"></div>
-        <div class="main-slide-button-circle"></div>
-        <div class="main-slide-button-circle"></div>
-        <div class="main-slide-button-circle"></div>
-        <div class="main-slide-button">▶</div>
-      </div>
+      <section class="main-slide" class="layout">
+        <div class="slide-thum-wrap"></div>
+        <div class="slide-button-wrap"></div>
+      </section>
       <!-- 오른손 서비스 -->
-      <div class="main-service-box"></div>
+      <section class="main-service-box" class="layout">
+        <ul>
+          <li>💌 <b>오른손 서비스</b></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
       <!-- 서비스 소개 -->
-      <div class="main-introduce-service"></div>
+      <section class="main-introduce-service"></section>
       <!-- 오른손 pick! 파트너 -->
-      <div class="main-pick-partner"></div>
+      <section class="main-pick-partner" class="layout"></section>
       <!-- 시니어 라이프 -->
-      <div class="main-senior-life"></div>
+      <section class="main-senior-life" class="layout"></section>
       <!-- 이벤트 -->
+      <section class="main-event" class="layout"></section>
       <!-- 공지 -->
+      <section class="main-notice" class="layout"></section>
     </main>
-    <footer>
+    <footer class="footer" class="layout">
       <!-- 자주 묻는 질문 -->
       <!-- 방침 약관, sns -->
       <!-- 회사 정보 -->

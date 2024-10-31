@@ -32,6 +32,10 @@
   border-bottom: 1px solid lightgrey;
   align-items: center;
 }
+.header-logo {
+  background-color: gray;
+  height: 100%;
+}
 .menu-list {
   display: flex;
   gap: 10px;
