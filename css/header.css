@@ -1,11 +1,12 @@
 .header {
+  border-bottom: 1px solid black;
 }
 .header-top {
+  display: flex;
   width: 100%;
-  height: 40px;
+  height: 72px;
   background-color: black;
   color: whitesmoke;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -23,59 +24,73 @@
   border-radius: 50%;
   margin-left: 10px;
   cursor: pointer;
-  padding: px;
 }
 .header-bottom {
   display: flex;
+  height: 80px;
   justify-content: space-between;
   padding: 10px;
   border-bottom: 1px solid lightgrey;
   align-items: center;
+  padding: 0 42px;
 }
 .header-logo {
-  background-color: gray;
-  height: 100%;
+  background-color: lightgrey;
+  width: 130px;
+  height: 38px;
 }
 .menu-list {
   display: flex;
   gap: 10px;
+  width: 447px;
+  justify-content: space-between;
 }
 .menu {
   color: black;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
 }
 .profile-box {
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
 .partners {
-  width: 70px;
-  height: 30px;
-  border: 1px solid lightgray;
+  display: flex;
+  border: 1px solid #d6d7dd;
   background-color: white;
   border-radius: 10px;
-  display: flex;
   align-items: center;
   justify-content: center;
+  width: 104px;
+  height: 50px;
+  padding: 12px;
 }
 .partners a {
-  color: black;
-  font-size: 10px;
-  font-weight: bold;
+  display: block;
+  color: #0b0d10;
+  width: 78x;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  align-content: center;
 }
 .login {
-  width: 70px;
-  height: 30px;
-  border: 1px solid lightgray;
-  background-color: blue;
-  border-radius: 10px;
   display: flex;
+  border: 1px solid #d6d7dd;
+  background-color: #2417ce;
+  border-radius: 10px;
   align-items: center;
   justify-content: center;
+  width: 104px;
+  height: 50px;
+  padding: 12px;
 }
 .login a {
-  color: white;
-  font-size: 10px;
-  font-weight: bold;
+  display: block;
+  color: #fff;
+  width: 78x;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  align-content: center;
 }

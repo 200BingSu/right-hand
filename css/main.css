@@ -1,13 +1,273 @@
 .main {
-}
-.layout {
-  /* margin: 0 auto; */
-  max-width: 1500px;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-.slide-thum-wrap {
-  width: 100vw;
-  height: 400px;
+/* 전체 공통 소제목 */
+.title-box {
+  display: flex;
+  height: 69px;
+  align-items: center;
+}
+.title-box .title-icon {
+  width: 48px;
+  height: 48px;
+  background-color: lightgrey;
+  margin-right: 30px;
+}
+.title-box .title-icon img {
+}
+.title-box .title {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* 슬라이드 */
+.main-slide {
+  border-bottom: 1px solid black;
+}
+.main-slide .slide-thum-wrap {
+  height: 508px;
+  background-color: lightgray;
+}
+.main-slide .slide-thum-wrap .slide-thum {
+}
+.main-slide .slide-thum-wrap .slide-thum img {
+}
+.main-slide-button-wrap {
+  display: flex;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.main-slide-button-wrap .slide-button {
+}
+.main-slide-button-wrap .slide-circle {
+  height: 12px;
+  width: 12px;
+  background-color: #000;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+
+/* 오른손 서비스 */
+.main-service-box {
+  border-bottom: 1px solid black;
+}
+.main-service-box .card-wrap {
+  height: 708px;
+  /* top-botoom 사이 높이 조절 필요 */
+}
+.card-wrap .card-wrap-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.card-wrap-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 340px;
+  height: 302px;
+  border-radius: 36px;
+  overflow: hidden;
+  background-color: lightgray;
+}
+.long-card {
+  width: 708px;
+  height: 302px;
+  border-radius: 36px;
+  overflow: hidden;
+  background-color: lightgray;
+}
+/* 서비스 소개 */
+.main-introduce-service {
+  display: flex;
+  height: 130px;
+  width: 200vw;
+  gap: 30px;
+  border: 1px solid black;
+}
+.service-container {
+  display: block;
+  height: 100%;
+  border-radius: 100px;
+  background-color: lightgrey;
+  justify-items: center;
+  align-content: center;
+}
+.service-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 53px;
+  gap: 30px;
+}
+.service-img {
+}
+.service-title {
+  font-size: 28px;
+  font-weight: 400;
+}
+.service-sns {
+  display: flex;
+}
+.sns-icon {
+  margin-right: 16px;
+  height: 62px;
+  width: 62px;
+  border-radius: 50px;
   background-color: gray;
+  align-content: center;
+  text-align: center;
+}
+
+/* 컨텐츠 크기만큼 영역 잡히는거 보면 inline-block일 것 같음 */
+/* 근데 그때그떄 필요한 내용으로 바꾸면 레이아웃이 이상할 것 같은데, 최대 sns 아이콘이 3개니까 3개를 미리 넣어두고 가리는걸까 생각 중.. */
+
+/* 오른손 pick! 파트너, 시니어 라이프, 이벤트 */
+.main-pick-partner {
+  border-bottom: 1px solid black;
+}
+.main-pick-partner .content-box-wrap {
+  height: 400px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.content-box-wrap .contents-box {
+  height: 100%;
+  width: 340px;
+  border-radius: 30px;
+  background-color: lightgray;
+  position: relative;
+  overflow: hidden;
+}
+.contents-box .box-info {
+  width: 100%;
+  padding: 28px 28px 20px 28px;
+  background-color: rgb(236, 236, 236);
+  position: absolute;
+}
+.box-info .box-info-date {
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.box-info .box-info-title {
+  color: #111;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.72px;
+  margin-bottom: 12px;
+}
+.box-info-mark {
+  display: flex;
+}
+.box-info .box-info-heart {
+  width: 29px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+}
+.box-info .box-info-heart .heart-icon {
+  width: 16px;
+  height: 16px;
+  color: rgb(78, 89, 107);
+  font-size: 14px;
+  font-weight: 400;
+}
+.box-info .box-info-heart .heart-num {
+  color: rgb(78, 89, 107);
+  font-size: 14px;
+  font-weight: 400;
+}
+.box-info .box-info-watch {
+  width: 43px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+}
+.box-info .box-info-watch .watch-icon {
+  width: 16px;
+  height: 16px;
+  color: rgb(78, 89, 107);
+  font-size: 14px;
+  font-weight: 400;
+}
+.box-info .box-info-watch .watch-num {
+  color: rgb(78, 89, 107);
+  font-size: 14px;
+  font-weight: 400;
+}
+.box-img {
+  width: 100%;
+  height: 100%;
+}
+.box-img img {
+  width: 100%;
+  height: 100%;
+}
+.shortcut-container {
+  width: 100%;
+}
+.shortcut-box {
+  margin: 0 auto;
+  width: 320px;
+  height: 60px;
+  padding: 18px 0;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+.shortcut-box a {
+  display: block;
+  cursor: pointer;
+}
+.shortcut-box .shortcut-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(85, 85, 85);
+}
+.shortcut-box .arrow {
+}
+
+/* 공지 */
+.main-notice {
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  column-gap: 24px;
+}
+.main-notice-content {
+  display: flex;
+  justify-content: space-between;
+}
+.notice-box {
+  width: 520px;
+  height: 140px;
+  padding: 40px 30px;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+}
+.notice-box a {
+  cursor: pointer;
+}
+.notice-box a .notice-box-top {
+  display: flex;
+}
+.notice-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.notice-box-top .notice-arrow {
+}
+.notice-date {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(57, 63, 73);
 }
